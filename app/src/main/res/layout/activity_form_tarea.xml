@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormTarea"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO TAREA"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NOMBRE TAREA"
+        android:id="@+id/txtNombreTarea"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DESCRIPCION"
+        android:id="@+id/txtDescripcion"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="FECHA ACTUAL"
+        android:id="@+id/txtFechaActual"/>
+    <!-- CONTAINER CALENDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_layout"
+        android:orientation="vertical">
+
+    <!-- HEADER CALENDAR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar fecha"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_margin="10dp"
+            android:textColor="#fff"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:id="@+id/showVC"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+        <!-- BODY CALENDAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewCalendar"
+            android:visibility="gone"
+            >
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Contenedor participantes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#689F38"
+        android:layout_marginTop="10dp">
+
+        <!-- Cabecera Formulario Participantes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PARTICIPANTES"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:id="@+id/showVP"/>
+
+        </LinearLayout>
+        <!-- Body formulario particiantes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#78B840"
+            android:id="@+id/viewParticipantes"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="NOMBRE PARTICIPANTE"
+                android:id="@+id/txtNombreParticipante"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR"
+        android:background="@drawable/bg_button"
+        android:id="@+id/btnCrearTarea"/>
+
+</LinearLayout>
