@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".Compra">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="Fecha"
+                android:textSize="20dp"
+                android:id="@+id/fechaCompra"/>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de teléfono del cliente"
+                android:textSize="20dp"
+                android:id="@+id/noTelClienteCompra" />
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total"
+                android:textSize="20dp"
+                android:id="@+id/totalCompra" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Id de la compra"
+                    android:textSize="20dp"
+                    android:id="@+id/idCompra"/>
+                <ImageButton
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/buscarCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:src="@drawable/search"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|top"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/insertarCompra"
+                    android:layout_width="110dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="INSERTAR"
+                    android:background="@drawable/bg_btn"/>
+                <Button
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/actualizarCompra"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="ACTUALIZAR"
+                    android:background="@drawable/bg_btn"/>
+                <Button
+                    android:id="@+id/eliminarCompra"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Eliminar"
+                    android:background="@drawable/bg_btn"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Compras registradas"
+                android:textSize="22dp"
+                android:textColor="#242424"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Id     Fecha                No. Tel.         Total"
+                android:textSize="20dp"
+                android:textColor="#242424"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/etiquetaCompra"
+                android:textSize="19dp"/>
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/regresarCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="REGRESAR"
+                android:background="@drawable/btn_back"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

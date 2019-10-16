@@ -5,138 +5,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="10dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MIS TAREAS"
-        android:layout_gravity="center"
-        android:textSize="30dp"
-        android:fontFamily="sans-serif-black"/>
-
+        android:textSize="28dp"
+        android:text="HOME"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#242424"
+        android:textAlignment="center" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#4D4A4A"
-        android:padding="10dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
-    <!--- LISTAS  -->
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#F57C00"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Listas"
-                    android:layout_gravity="center"
-                    android:textSize="30dp"
-                    android:fontFamily="sans-serif-black"
-                    android:layout_margin="10dp"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:layout_margin="10dp"
-                    android:id="@+id/btnNuevaLista"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=">"
-                    android:id="@+id/ShowSL"
-                    android:layout_margin="10dp"/>
-
-            </LinearLayout>
-        </LinearLayout>
-    <!-- SCROLLlISTAS -->
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="#F08416"
-            android:visibility="gone"
-            android:id="@+id/viewList">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/LayoutViewListas">
-
-
-        </LinearLayout>
-
-    </ScrollView>
-
-
-    <!-- TAREAS -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#0097A7"
-        android:orientation="vertical"
-        >
-
-        <LinearLayout
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tareas"
-                android:layout_gravity="center"
-                android:textSize="30dp"
-                android:fontFamily="sans-serif-black"
-                android:layout_margin="10dp"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:layout_margin="10dp"
-                android:id="@+id/btnNuevaTarea"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=">"
-                android:id="@+id/ShowHW"
-                android:layout_margin="10dp"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-    <!-- SCROLLTAREAS -->
-    <ScrollView
-            android:layout_width="match_parent"
+            android:text="Empresas"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btnEmpresas"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#01A1B3"
-            android:id="@+id/viewTareas"
-            android:visibility="gone">
+            android:text="Clientes"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btnClientes"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almacenes"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btnAlmacenes"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compras"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/bg_btn"
+            android:id="@+id/btnCompras"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/LayoutViewTareas">
-
-
-            </LinearLayout>
-    </ScrollView>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Detalles de compra"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="22dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_btn"
+        android:id="@+id/btnDetalleC"/>
 </LinearLayout>

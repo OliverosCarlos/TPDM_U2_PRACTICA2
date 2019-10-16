@@ -1,4 +1,4 @@
-package mx.edu.ittepic.myhomwor
+package mx.edu.ittepic.tpdm_u2_practica2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("mx.edu.ittepic.myhomwor", appContext.packageName)
+        assertEquals("mx.edu.ittepic.tpdm_u2_practica2", appContext.packageName)
     }
 }

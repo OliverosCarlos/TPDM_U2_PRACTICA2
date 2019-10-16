@@ -1,4 +1,4 @@
-package mx.edu.ittepic.myhomwor
+package mx.edu.ittepic.tpdm_u2_practica2
 
 import org.junit.Test
 
